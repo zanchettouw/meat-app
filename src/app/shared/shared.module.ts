@@ -11,6 +11,7 @@ import { ShoppingCartService } from "app/restaurant-detail/shopping-cart/shoppin
 import { RestaurantsService } from "app/restaurants/restaurants.service";
 import { OrderService } from "app/order/order.service";
 import { NotificationService } from "./messages/notification.service";
+import { LoginService } from "app/security/login/login.service";
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ export class SharedModule {
         ShoppingCartService,
         RestaurantsService,
         OrderService,
-        NotificationService
+        NotificationService,
+        LoginService
       ]
     }
   }
