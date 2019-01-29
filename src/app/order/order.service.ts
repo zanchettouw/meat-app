@@ -51,7 +51,5 @@ export class OrderService {
             )
         }
         return this.http.post<Order>(`${MEAT_API}/orders`, order, { headers: headers }).map(order => order.id)
-
-
     }
 }
